@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conscientização Cibernética - Apresentação Interativa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1 - Abertura -->
+        <div class="slide active" id="slide1">
+            <div class="slide-content">
+                <div class="hero-section">
+                    <h1 class="main-title">Bem-vindos à Palestra de<br>Conscientização Cibernética</h1>
+                    <div class="subtitle">Segurança não é só tecnologia: é comportamento</div>
+                    
+                    <div class="stats-container">
+                        <div class="stat-card" data-animate="true">
+                            <div class="stat-number" data-target="74">0</div>
+                            <div class="stat-label">% das violações de dados envolvem falha humana</div>
+                            <div class="stat-source">Verizon DBIR 2024</div>
+                        </div>
+                        
+                        <div class="stat-card" data-animate="true">
+                            <div class="stat-number" data-target="95">0</div>
+                            <div class="stat-label">% dos incidentes de segurança começam com erro humano</div>
+                            <div class="stat-source">Stanford Research</div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study">
+                        <h3>📰 Caso Real no Brasil</h3>
+                        <p>Golpe no INSS (2023) com engenharia social, prejudicando milhares de aposentados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 - Engenharia Social -->
+        <div class="slide" id="slide2">
+            <div class="slide-content">
+                <h2>O que é Engenharia Social?</h2>
+                <p class="definition">Manipulação psicológica para enganar pessoas e obter acesso a sistemas/dados</p>
+                
+                <div class="techniques-grid">
+                    <div class="technique-card">
+                        <div class="technique-icon">📧</div>
+                        <h3>Phishing</h3>
+                        <p>E-mails falsos</p>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">📱</div>
+                        <h3>Smishing</h3>
+                        <p>SMS/WhatsApp malicioso</p>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">📞</div>
+                        <h3>Vishing</h3>
+                        <p>Ligações falsas (suporte, banco)</p>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">🎭</div>
+                        <h3>Pretexting</h3>
+                        <p>Histórias inventadas para obter confiança</p>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">🚪</div>
+                        <h3>Tailgating</h3>
+                        <p>Entrada física sem autorização</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 - Phishing -->
+        <div class="slide" id="slide3">
+            <div class="slide-content">
+                <h2>Phishing: o ataque nº1</h2>
+                
+                <div class="phishing-stats">
+                    <div class="stat-item">
+                        <div class="stat-number-large">3,4B</div>
+                        <div class="stat-description">e-mails de phishing enviados por dia</div>
+                        <div class="stat-source">IBM Security 2024</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number-large">91%</div>
+                        <div class="stat-description">dos ataques cibernéticos começam com phishing</div>
+                        <div class="stat-source">CISA 2024</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number-large">+60%</div>
+                        <div class="stat-description">crescimento no Brasil em 2024</div>
+                        <div class="stat-source">PSafe Relatório</div>
+                    </div>
+                </div>
+                
+                <div class="example-box">
+                    <h3>Exemplo Prático:</h3>
+                    <p>Um e-mail que parece ser do "Banco do Brasil" pedindo atualização de senha → link leva para site falso</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3.5 - Ransomware -->
+        <div class="slide" id="slide3-5">
+            <div class="slide-content">
+                <h2>Ransomware: O Ataque Mais Destrutivo</h2>
+                <p class="definition">Malware que criptografa dados e exige pagamento para liberá-los</p>
+                
+                <div class="ransomware-stats">
+                    <div class="stat-item">
+                        <div class="stat-number-large">105</div>
+                        <div class="stat-description">ataques de ransomware no Brasil em 2024</div>
+                        <div class="stat-source">Kaspersky 2024</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number-large">+69%</div>
+                        <div class="stat-description">aumento em relação a 2023 (62 casos)</div>
+                        <div class="stat-source">Kaspersky 2024</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number-large">+146%</div>
+                        <div class="stat-description">aumento no setor de saúde (16 mil tentativas)</div>
+                        <div class="stat-source">IT Section 2024</div>
+                    </div>
+                </div>
+                
+                <div class="famous-cases">
+                    <h3>🔥 Casos Famosos no Brasil e Mundo</h3>
+                    <div class="cases-grid">
+                        <div class="case-item">
+                            <div class="case-icon">🏛️</div>
+                            <div class="case-content">
+                                <h4>STJ - 2020</h4>
+                                <p>Ransomware "RansomExx" criptografou todo o acervo de processos da Corte</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-item">
+                            <div class="case-icon">🥩</div>
+                            <div class="case-content">
+                                <h4>JBS - 2021</h4>
+                                <p>Maior processadora de carne do mundo paralisada em 4 países</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-item">
+                            <div class="case-icon">🌍</div>
+                            <div class="case-content">
+                                <h4>WannaCry - 2017</h4>
+                                <p>230 mil computadores infectados em 150 países</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-item">
+                            <div class="case-icon">⛽</div>
+                            <div class="case-content">
+                                <h4>Colonial Pipeline - 2021</h4>
+                                <p>Maior oleoduto dos EUA paralisado, causando escassez de combustível</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ransomware-process">
+                    <h3>⚡ Como Funciona um Ataque de Ransomware</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Infecção</h4>
+                                <p>E-mail de phishing ou vulnerabilidade explorada</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Criptografia</h4>
+                                <p>Dados são criptografados e ficam inacessíveis</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Exigência</h4>
+                                <p>Resgate em Bitcoin para liberar os dados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 - Identificar Phishing -->
+        <div class="slide" id="slide4">
+            <div class="slide-content">
+                <h2>Como identificar um Phishing?</h2>
+                
+                <div class="warning-signs">
+                    <div class="warning-item">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                            <h4>Endereço de e-mail suspeito</h4>
+                            <p>Ex: "@banco-br.com" ao invés de "@bb.com.br"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="warning-item">
+                        <i class="fas fa-link"></i>
+                        <div>
+                            <h4>Links encurtados ou diferentes</h4>
+                            <p>Ao passar o mouse, o link real é diferente</p>
+                        </div>
+                    </div>
+                    
+                    <div class="warning-item">
+                        <i class="fas fa-spell-check"></i>
+                        <div>
+                            <h4>Erros de português ou formatação</h4>
+                            <p>Textos mal escritos ou mal formatados</p>
+                        </div>
+                    </div>
+                    
+                    <div class="warning-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Tom de urgência</h4>
+                            <p>"Atualize agora ou sua conta será bloqueada!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="warning-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Pedidos de informações confidenciais</h4>
+                            <p>Via e-mail, nunca por telefone oficial</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-section">
+                    <h3>💡 Demonstração ao vivo</h3>
+                    <p>Mostrar 2 prints de e-mails → um verdadeiro e um phishing</p>
+                    <button class="demo-btn" onclick="showEmailDemo()">Ver Demonstração</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 - Políticas Parte 1 -->
+        <div class="slide" id="slide5">
+            <div class="slide-content">
+                <h2>Políticas de Segurança (Parte 1)</h2>
+                
+                <div class="policies-grid">
+                    <div class="policy-card">
+                        <div class="policy-icon">🔐</div>
+                        <h3>Identificação e Autenticação</h3>
+                        <ul>
+                            <li>MFA obrigatório</li>
+                            <li>Acesso por perfil</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">🔑</div>
+                        <h3>Senhas</h3>
+                        <ul>
+                            <li>Mínimo 12 caracteres</li>
+                            <li>Complexidade obrigatória</li>
+                            <li>Troca em caso de incidente</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">📧</div>
+                        <h3>Utilização Aceitável</h3>
+                        <ul>
+                            <li>Não usar e-mail corporativo para cadastros pessoais</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">🌐</div>
+                        <h3>Acesso Remoto</h3>
+                        <ul>
+                            <li>VPN obrigatória</li>
+                            <li>Dispositivos autorizados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 - Políticas Parte 2 -->
+        <div class="slide" id="slide6">
+            <div class="slide-content">
+                <h2>Políticas de Segurança (Parte 2)</h2>
+                
+                <div class="policies-grid">
+                    <div class="policy-card">
+                        <div class="policy-icon">🔧</div>
+                        <h3>Manutenção</h3>
+                        <ul>
+                            <li>Aplicar patches críticos em até 72h</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">⚠️</div>
+                        <h3>Incidentes</h3>
+                        <ul>
+                            <li>Relatar em até 30 minutos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">📊</div>
+                        <h3>Dados</h3>
+                        <ul>
+                            <li>Classificação (confidencial, interno, público)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">🏦</div>
+                        <h3>Credenciais</h3>
+                        <ul>
+                            <li>Uso de cofres de senha (Bitwarden, 1Password)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">🏢</div>
+                        <h3>Corporativa</h3>
+                        <ul>
+                            <li>Gestão de mudanças e ativos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7 - Políticas Adicionais -->
+        <div class="slide" id="slide7">
+            <div class="slide-content">
+                <h2>Políticas Adicionais Recomendadas</h2>
+                
+                <div class="additional-policies">
+                    <div class="policy-item">
+                        <div class="policy-number">1</div>
+                        <div class="policy-content">
+                            <h3>Treinamento Contínuo</h3>
+                            <p>Simulações de phishing regulares</p>
+                        </div>
+                    </div>
+                    
+                    <div class="policy-item">
+                        <div class="policy-number">2</div>
+                        <div class="policy-content">
+                            <h3>Dispositivos Pessoais (BYOD)</h3>
+                            <p>Regras claras para notebook/celular pessoal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="policy-item">
+                        <div class="policy-number">3</div>
+                        <div class="policy-content">
+                            <h3>Privacidade (LGPD)</h3>
+                            <p>Cumprimento legal e proteção de dados pessoais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8 - Impacto nos Negócios -->
+        <div class="slide" id="slide8">
+            <div class="slide-content">
+                <h2>Impacto nos Negócios</h2>
+                
+                <div class="impact-calculator">
+                    <div class="cost-display">
+                        <div class="cost-amount">US$ 1,48M</div>
+                        <div class="cost-description">Custo médio de violação de dados no Brasil</div>
+                        <div class="cost-source">IBM Cost of a Data Breach 2024</div>
+                    </div>
+                    
+                    <div class="impact-facts">
+                        <div class="fact-item">
+                            <i class="fas fa-bolt"></i>
+                            <p>1 credencial roubada pode causar fraudes em segundos</p>
+                        </div>
+                        
+                        <div class="fact-item">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Empresas que treinam funcionários reduzem 70% o risco de cair em phishing</p>
+                            <span class="source">Proofpoint 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="example-scenario">
+                        <h3>💡 Exemplo Prático:</h3>
+                        <p>Invasão por phishing → fraude de boletos/faturas internas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9 - Teste Interativo -->
+        <div class="slide" id="slide9">
+            <div class="slide-content">
+                <h2>Teste Interativo</h2>
+                <p class="test-instruction">Escolha qual e-mail é phishing:</p>
+                
+                <div class="email-test">
+                    <div class="email-option" onclick="selectEmail(1)">
+                        <div class="email-header">
+                            <div class="email-sender">Banco do Brasil <span class="email-address">noreply@bb.com.br</span></div>
+                            <div class="email-subject">Atualização de Segurança Necessária</div>
+                        </div>
+                        <div class="email-body">
+                            <p>Prezado(a) Cliente,</p>
+                            <p>Por motivos de segurança, solicitamos que atualize seus dados bancários através do link abaixo:</p>
+                            <a href="#" class="email-link">https://bb.com.br/atualizacao-seguranca</a>
+                            <p>Atenciosamente,<br>Banco do Brasil</p>
+                        </div>
+                    </div>
+                    
+                    <div class="email-option" onclick="selectEmail(2)">
+                        <div class="email-header">
+                            <div class="email-sender">Banco do Brasil <span class="email-address">noreply@banco-br.com</span></div>
+                            <div class="email-subject">URGENTE: Sua conta será bloqueada!</div>
+                        </div>
+                        <div class="email-body">
+                            <p>Olá Cliente,</p>
+                            <p>ATENÇÃO! Sua conta será BLOQUEADA em 24h se não atualizar seus dados AGORA!</p>
+                            <a href="#" class="email-link">https://bit.ly/bb-atualizar</a>
+                            <p>Clique no link acima IMEDIATAMENTE!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="test-result" id="testResult" style="display: none;">
+                    <div class="result-content">
+                        <h3 id="resultTitle"></h3>
+                        <p id="resultExplanation"></p>
+                        <button onclick="resetTest()" class="reset-btn">Tentar Novamente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10 - Conclusão -->
+        <div class="slide" id="slide10">
+            <div class="slide-content">
+                <h2>Conclusão</h2>
+                
+                <div class="conclusion-message">
+                    <p class="main-message">A maior defesa contra ataques não é a tecnologia: é a consciência de cada colaborador.</p>
+                </div>
+                
+                <div class="three-pillars">
+                    <h3>3 Pilares Essenciais:</h3>
+                    <div class="pillar">
+                        <div class="pillar-icon">🔍</div>
+                        <div class="pillar-text">
+                            <h4>Desconfiar</h4>
+                            <p>de links e anexos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pillar">
+                        <div class="pillar-icon">📞</div>
+                        <div class="pillar-text">
+                            <h4>Confirmar</h4>
+                            <p>solicitações financeiras por telefone oficial</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pillar">
+                        <div class="pillar-icon">🚨</div>
+                        <div class="pillar-text">
+                            <h4>Reportar</h4>
+                            <p>incidentes imediatamente</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="final-quote">
+                    <blockquote>
+                        "A tecnologia protege os sistemas, mas só vocês podem proteger a empresa."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="navigation">
+            <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="slide-indicators">
+                <span class="indicator active" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(3.5)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+                <span class="indicator" onclick="goToSlide(5)"></span>
+                <span class="indicator" onclick="goToSlide(6)"></span>
+                <span class="indicator" onclick="goToSlide(7)"></span>
+                <span class="indicator" onclick="goToSlide(8)"></span>
+                <span class="indicator" onclick="goToSlide(9)"></span>
+                <span class="indicator" onclick="goToSlide(10)"></span>
+            </div>
+            
+            <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal para demonstração de e-mails -->
+    <div class="modal" id="emailModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmailDemo()">&times;</span>
+            <h3>Demonstração: E-mail Verdadeiro vs Phishing</h3>
+            <div class="email-comparison">
+                <div class="email-demo">
+                    <h4>✅ E-mail Verdadeiro</h4>
+                    <div class="email-example">
+                        <div class="email-header">
+                            <div class="email-sender">Banco do Brasil <span class="email-address">noreply@bb.com.br</span></div>
+                            <div class="email-subject">Comunicado Importante - Segurança</div>
+                        </div>
+                        <div class="email-body">
+                            <p>Prezado(a) Cliente,</p>
+                            <p>Informamos que foi detectada uma tentativa de acesso não autorizada à sua conta. Por segurança, bloqueamos temporariamente o acesso.</p>
+                            <p>Para reativar sua conta, acesse nosso site oficial: <strong>www.bb.com.br</strong></p>
+                            <p>Nunca solicitamos dados pessoais por e-mail.</p>
+                            <p>Atenciosamente,<br>Banco do Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="email-demo">
+                    <h4>❌ E-mail de Phishing</h4>
+                    <div class="email-example phishing">
+                        <div class="email-header">
+                            <div class="email-sender">Banco do Brasil <span class="email-address">noreply@banco-br.com</span></div>
+                            <div class="email-subject">URGENTE: Sua conta será bloqueada!</div>
+                        </div>
+                        <div class="email-body">
+                            <p>Olá Cliente,</p>
+                            <p>ATENÇÃO! Sua conta será BLOQUEADA em 24h se não atualizar seus dados AGORA!</p>
+                            <p>Clique no link: <a href="#">https://bit.ly/bb-atualizar</a></p>
+                            <p>Digite sua senha e CPF para confirmar!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
