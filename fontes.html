@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes e Referências - Conscientização Cibernética</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sources-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        .sources-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .sources-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .sources-header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .source-category {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .category-title i {
+            color: #667eea;
+        }
+
+        .source-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .source-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-left-color: #e74c3c;
+        }
+
+        .source-icon {
+            font-size: 2rem;
+            color: #667eea;
+            flex-shrink: 0;
+            width: 50px;
+            text-align: center;
+        }
+
+        .source-card:hover .source-icon {
+            color: #e74c3c;
+            transform: scale(1.2);
+        }
+
+        .source-content {
+            flex: 1;
+        }
+
+        .source-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .source-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.95rem;
+            word-break: break-all;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .source-link:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        .source-link i {
+            margin-left: 8px;
+            font-size: 0.8rem;
+        }
+
+        .source-description {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .stats-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .stats-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .stats-box p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        @media (max-width: 768px) {
+            .sources-header h1 {
+                font-size: 2rem;
+            }
+
+            .source-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .source-icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide active" style="display: block;">
+            <div class="sources-container">
+                <div class="sources-header">
+                    <h1><i class="fas fa-book"></i> Fontes e Referências</h1>
+                    <p>Materiais utilizados na elaboração desta apresentação sobre conscientização cibernética e engenharia social</p>
+                </div>
+
+                <div class="stats-box">
+                    <h3><i class="fas fa-info-circle"></i> Sobre as Fontes</h3>
+                    <p>Estas referências incluem relatórios oficiais, artigos especializados e recursos educacionais de organizações reconhecidas mundialmente em segurança cibernética.</p>
+                </div>
+
+                <!-- Engenharia Social -->
+                <div class="source-category">
+                    <div class="category-title">
+                        <i class="fas fa-user-secret"></i>
+                        <span>Engenharia Social</span>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Mitnick Security - Top Social Engineering Attacks</div>
+                            <a href="https://www.mitnicksecurity.com/blog/top-social-engineering-attacks" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.mitnicksecurity.com/blog/top-social-engineering-attacks
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Análise detalhada dos principais ataques de engenharia social por especialistas em segurança</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-lock"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Sprocket Security - Social Engineering Attacks</div>
+                            <a href="https://www.sprocketsecurity.com/blog/social-engineering-attacks-techniques-prominent-examples-and-prevention" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.sprocketsecurity.com/blog/social-engineering-attacks-techniques-prominent-examples-and-prevention
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Técnicas, exemplos proeminentes e métodos de prevenção contra engenharia social</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-globe-americas"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Arklok - Engenharia Social no Brasil</div>
+                            <a href="https://arklok.com.br/engenharia-social-quais-os-principais-ataques-e-como-se-proteger/" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://arklok.com.br/engenharia-social-quais-os-principais-ataques-e-como-se-proteger/
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Principais ataques de engenharia social e como se proteger - conteúdo em português</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-newspaper"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">TecMundo - O que é Engenharia Social</div>
+                            <a href="https://www.tecmundo.com.br/seguranca/403858-o-que-e-engenharia-social-e-como-evitar-cair-nesse-golpe.htm" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.tecmundo.com.br/seguranca/403858-o-que-e-engenharia-social-e-como-evitar-cair-nesse-golpe.htm
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Guia completo sobre engenharia social e como evitar cair nesse tipo de golpe</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-building"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">CSA Singapore - Social Engineering Attacks</div>
+                            <a href="https://www.csa.gov.sg/resources/publications/social-engineering-attacks" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.csa.gov.sg/resources/publications/social-engineering-attacks
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Publicação oficial da Cyber Security Agency de Singapura sobre ataques de engenharia social</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-brain"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Kaspersky - What is Social Engineering</div>
+                            <a href="https://www.kaspersky.com/resource-center/definitions/what-is-social-engineering" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.kaspersky.com/resource-center/definitions/what-is-social-engineering
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Definições e explicações sobre engenharia social do centro de recursos da Kaspersky</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-shield-virus"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Proofpoint - Social Engineering Threat Reference</div>
+                            <a href="https://www.proofpoint.com/us/threat-reference/social-engineering" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.proofpoint.com/us/threat-reference/social-engineering
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Referência completa de ameaças de engenharia social da Proofpoint</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phishing e IA -->
+                <div class="source-category">
+                    <div class="category-title">
+                        <i class="fas fa-robot"></i>
+                        <span>Phishing e Inteligência Artificial</span>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">TechRadar - Phishing Attacks Written by AI</div>
+                            <a href="https://www.techradar.com/pro/security/most-people-still-cant-identify-a-phishing-attack-written-by-ai-and-thats-a-huge-problem-survey-warns" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.techradar.com/pro/security/most-people-still-cant-identify-a-phishing-attack-written-by-ai-and-thats-a-huge-problem-survey-warns
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Pesquisa alerta sobre a dificuldade de identificar ataques de phishing escritos por IA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Relatórios e Estatísticas -->
+                <div class="source-category">
+                    <div class="category-title">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Relatórios e Estatísticas</span>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">IBM - Cost of a Data Breach Report</div>
+                            <a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.ibm.com/reports/data-breach
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Relatório anual da IBM sobre o custo de violações de dados</div>
+                        </div>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Verizon - Data Breach Investigations Report (DBIR)</div>
+                            <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.verizon.com/business/resources/reports/dbir/
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Relatório anual de investigações de violações de dados da Verizon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recursos Educacionais -->
+                <div class="source-category">
+                    <div class="category-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Recursos Educacionais</span>
+                    </div>
+
+                    <div class="source-card">
+                        <div class="source-icon"><i class="fab fa-tiktok"></i></div>
+                        <div class="source-content">
+                            <div class="source-title">Zona de Segurança Digital - TikTok</div>
+                            <a href="https://www.tiktok.com/@zonadesegurancadigital" target="_blank" rel="noopener noreferrer" class="source-link">
+                                https://www.tiktok.com/@zonadesegurancadigital
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <div class="source-description">Conteúdo educativo sobre segurança digital em formato de vídeos curtos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão de Voltar -->
+                <div class="back-button">
+                    <a href="index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar para Apresentação Principal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adicionar efeito de animação ao carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.source-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
+
