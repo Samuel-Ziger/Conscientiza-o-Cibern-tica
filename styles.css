@@ -994,3 +994,53 @@ body {
     background: #5a6fd8;
 }
 
+/* Botão de link para módulo adicional */
+.module-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.module-link-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4c93 100%);
+}
+
+.module-link-btn i {
+    font-size: 1.3rem;
+}
+
+.module-link-btn i:first-child {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .module-link-btn {
+        font-size: 1rem;
+        padding: 15px 30px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
