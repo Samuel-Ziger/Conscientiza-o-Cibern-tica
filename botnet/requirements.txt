@@ -1,0 +1,8 @@
+# Requisitos para Demonstração Educacional de Botnet/DDoS
+# AVISO: Este projeto é apenas para fins educacionais
+
+# Não há dependências externas necessárias
+# O projeto usa apenas bibliotecas padrão do Python 3
+
+# Python 3.6+ é necessário
+
